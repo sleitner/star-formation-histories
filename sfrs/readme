@@ -1,0 +1,4 @@
+files have columns:  
+time, z, SFR_k11, SFR_min, SFR_max 
+where SFR_k11 is the best measurement of SFRs (from Karim 2011, radio COSMOS data) for the expected mass of the galaxy at a given time. SFR_min and max show the spread in SFRs found by integrating the galaxy through different sets of main sequence observations.  
+

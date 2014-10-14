@@ -1,0 +1,4 @@
+files have columns:  
+time, z, M*_k11, M*_min, M*_max 
+where M*_k11 is the best measurement of stellar mass (from Karim 2011, radio COSMOS data) for the expected mass of the galaxy at a given time. M*_min and max show the spread in M* found by integrating the galaxy through different sets of main sequence observations.  
+

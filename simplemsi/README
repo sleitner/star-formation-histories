@@ -1,0 +1,30 @@
+Written by Sam Leitner
+updated 3/29/12
+
+Compilation:
+Change the MYGSL_DIR to point to the absolute path where simplemsi/include/ unpacks 
+
+Run arguments:
+There are several mandatory arguments to simple_msi.x
+(1) the base-10 log of the final stellar mass
+(2) the lookback time at which the final stellar mass is observed
+(3) the fit to the SFR-M* sequence that is used 
+(4) the way the fit is extrapolated if an interpolated fit is chosen (use 0 if the fit is not interpolated)
+(5) the adjustment to the normalization of the chosen fit (1=no adjustment)
+ 
+The IMF, the number of iterations for the recycling calculation, and the initial-guess recycling rate can also be set in hfiles/defs.h
+
+e.g. ./simple_msi.x 10.5 0.0 kfp 0 1
+
+
+Output columns:  (in out/avgsfh-*)
+(1) lookback time 
+(2) redshift 
+(3) M*(z) 
+(4) fraction of star formation taken place over total star formation
+(5) SFR(z) for the galaxy
+(6) mass loss rate at time t (dot(M*)=(5)-(6))
+(7) mass loss rate from a population of age (1) to the total mass loss at the final time 
+
+Note: Apologies for the variables related to merging and modeling of scatter that have no relevance here (e.g. ntrials and stoch_scatter). This simpler procedure was extracted quickly from code used in my paper (http://arxiv.org/abs/1108.0938) and probably wont get more attention from me unless there is popular demand. However, feel free to contact me with questions at sam.leitner@gmail.com
+

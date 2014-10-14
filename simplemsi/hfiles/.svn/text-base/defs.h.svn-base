@@ -1,0 +1,32 @@
+#ifndef __DEFS_H__
+#define __DEFS_H__
+
+//#define DEBUG
+
+//#define IMF_CONROY 
+//#define IMF_JUNGWIERT 
+#define IMF_C03 
+//#define IMF_S98 
+//#define IMF_C03STEEP 
+
+//#define MODE_BLUR //mass sits at the mode of the lognormal-- true mass is most likely, but distribution is assymetric
+//#define SCATTER
+//#define FLIP_ENV
+//#define SLOW_SF
+#define PUTBACK_OVERFLOW
+
+
+//#define STOP_SSFR
+
+
+
+#define NITER 6
+#define c_IRR 0.45
+
+//#define MERGING
+//#define AVERAGE_AVERAGE
+//#define FLIP_AVG
+
+#define ntimebins 1000
+
+#endif
